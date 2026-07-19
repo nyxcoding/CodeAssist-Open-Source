@@ -1,0 +1,5 @@
+{
+    "customFunctionPaths": [
+        "src/functions"
+    ]
+}
