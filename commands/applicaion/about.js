@@ -29,7 +29,7 @@ About used: $getGlobalVar[about]
 ]
 
 $color[Navy]
-$author[Nyx Coding      nyxcoding       Made in BotForge]
+$author[DISPLAY_NAME      USERNAME       Made in BotForge]
 `
 }
 module.exports = commands
