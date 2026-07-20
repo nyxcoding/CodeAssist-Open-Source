@@ -4,4 +4,5 @@ data = {
     "ADMIN_USER_ID1"
   ]
 }
+
 module.exports = data

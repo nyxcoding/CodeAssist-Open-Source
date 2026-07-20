@@ -1,5 +1,3 @@
-
-=======
 # CodeAssist-Open-Source
 This is the OFFICIAL CodeAssist source code, made by `nyxcoding`.
 
@@ -27,6 +25,7 @@ npm run typecheck
 
 To add a command, create a new file in `src/commands` and enter the command code inside
 The command code should look like this:
+
 ```javascript
 commands = {
   data: {

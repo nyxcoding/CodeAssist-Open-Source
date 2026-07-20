@@ -6,7 +6,7 @@ const commands = {
         options: [
             {
                 name: "type",
-                description: "Teaches all types!",
+                description: "What part of Python would you like to learn?",
                 type: 3, // STRING
                 required: true,
                 choices: [

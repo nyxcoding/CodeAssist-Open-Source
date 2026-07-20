@@ -5,7 +5,7 @@ commands = {
         options: [
             {
                 name: "type",
-                description: "What part of C# would you like to learn",
+                description: "What part of C# would you like to learn?",
                 type: 3, // STRING
                 required: true,
                 choices: [
@@ -26,7 +26,7 @@ commands = {
         ]
     },
     code: `
-    $if[$option[type]==setup;$codeBlock[
+        $if[$option[type]==setup;$codeBlock[
 using System:
 
 namespace myProgram{
@@ -34,12 +34,12 @@ namespace myProgram{
 
     }
 }
-    ;csharp]
-$setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-$setGlobalVar[csharp;$math[$getGlobalVar[csharp]+1]]
-]
-$if[$option[type]==print;
-$codeBlock[
+;csharp]
+        $setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
+        $setGlobalVar[csharp;$math[$getGlobalVar[csharp]+1]]
+        ]
+        $if[$option[type]==print;
+        $codeBlock[
 // INSIDE THE MAIN BLOCK
 Console.WriteLine("Nyx Coding"):
 Console.Write("Nyx")
@@ -51,17 +51,18 @@ Console.Write(myVar)
 
 // WRITE DOES NOT MAKE A NEW LINE, WRITELINE DOES
 ;csharp]
-$setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-$setGlobalVar[csharp;$math[$getGlobalVar[csharp]+1]]
-]
-$if[$option[type]==input;
-$codeBlock[
+        $setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
+        $setGlobalVar[csharp;$math[$getGlobalVar[csharp]+1]]
+        ]
+        $if[$option[type]==input;
+        $codeBlock[
 // INSIDE MAIN BLOCK
-Console.Readline()
+Console.ReadLine()
 ;csharp]
-$setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-$setGlobalVar[csharp;$math[$getGlobalVar[csharp]+1]]
-]
-    `
+        $setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
+        $setGlobalVar[csharp;$math[$getGlobalVar[csharp]+1]]
+        ]
+    `,
 }
+
 module.exports = commands;

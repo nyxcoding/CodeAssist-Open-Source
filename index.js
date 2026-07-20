@@ -28,4 +28,3 @@ db.variables({
 client.applicationCommands.load("src/commands");
 
 client.login(token);
-

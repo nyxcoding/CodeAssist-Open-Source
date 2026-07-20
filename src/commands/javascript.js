@@ -5,7 +5,7 @@ const commands = {
         options: [
             {
                 name: "type",
-                description: "What Javascript you would like to learn",
+                description: "What part of Javascript would you like to learn?",
                 type: 3,
                 required: true,
                 choices: [
