@@ -9,23 +9,23 @@ const commands = {
 
     $addField[
     About CodeAssist!;
-    <@$userID> The best code assistant bot out there, being the only one! Not open sourced or anything, yet!
+    <@$userID> The best code assistant bot out there, being the only one!
 
-    Please note, in all cases requiring a Semi-Colon, for forgescript punctuality, will be replaced with :
-    Placeholders will be put in place for code commands
-    Version 1.1.3
+    Please note, in all cases requiring a Semi-Colon, for forgescript punctuality, will be replaced with:
+    Placeholders will be put in place for code commands.
+    **Version:** 1.1.3
 
-    Commands used: $getGlobalVar[commandsUsed]
+    **Commands used:** $getGlobalVar[commandsUsed]
 
-    Python used: $getGlobalVar[python]
+    **Python used:** $getGlobalVar[python]
 
-    JavaScript used: $getGlobalVar[javascript]
+    **JavaScript used:** $getGlobalVar[javascript]
 
-    TypeScript used: $getGlobalVar[typescript]
+    **TypeScript used:** $getGlobalVar[typescript]
 
-    HTML used: $getGlobalVar[html]
+    **HTML used:** $getGlobalVar[html]
 
-    About used: $getGlobalVar[about]
+    **About used:** $getGlobalVar[about]
     ]
 
     $color[Navy]

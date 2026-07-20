@@ -1,3 +1,3 @@
-token = "INSERT_TOKEN_HERE";
+token = "YOUR_BOT_TOKEN";
 
 module.exports = token;
