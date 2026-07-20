@@ -39,7 +39,7 @@ db.variables({
   about: 0
 })
 
-client.applicationCommands.load("commands/application")
+client.applicationCommands.load("commands/applicaion")
 client.commands.load("commands/client")
 
 client.login(token)
