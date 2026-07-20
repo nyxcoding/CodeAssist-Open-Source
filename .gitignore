@@ -1,0 +1,5 @@
+node_modules/
+database/
+forge.db
+token.js
+.env

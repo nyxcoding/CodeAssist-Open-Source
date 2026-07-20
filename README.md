@@ -1,29 +1,28 @@
-# CODEASSIST BOT RUNTIME
 
-In order to run your clone of CodeAssist, replace the template tokean and simply do './run' or 'node index.js', beware you need Node for this
+=======
+# CodeAssist-Open-Source
+This is the OFFICIAL CodeAssist source code, made by `nyxcoding`.
 
-# **ADDING COMMANDS**
-- Open *"commands/client"*
-- Create a new file
-- Enter "commands = {...}"
-- At the **bottom** of this new file, add "module.exports = commands;"
-- Save
+How to run the bot? It's simple!
 
+```bash
+npm install
+cp token.example.js token.js
+npm run start
+```
 
-# **ADDING APPLICATION COMMANDS**
-- Open *"commands\applicaion"*
-- Create a new file
-- Enter "commands = {...}"
-- At the **bottom** of the file, add "module.exports = commands;"
-- Save
+Or do like me, use Batch.
 
-# REPLACE
-- In the about command, change it to your username/display name
+```batch
+npm install
+copy token.example.js token.js
+./run.bat
+```
 
-- In token.js, replace 'YOUR_BOT_TOKEN' with your bot's token.
+And if you are having any issues on the code, just run typecheck solutions.
 
-# ADD AN ADMIN USER
-- Go into *config.js* and edit "ADMIN_USER_ID" with your user id
-- Use the path *"../../config"* if used in a command file
-- Congratulations, you are now an admin
-- NOTE THAT YOU DO NOT NEED 2 ADMINS, YOU CAN HAVE 1 OR HIGHER
+```bash
+npm run typecheck
+```
+
+Happy coding!
