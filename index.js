@@ -21,6 +21,7 @@ db.variables({
 	javascript: 0,
 	typescript: 0,
 	html: 0,
+	csharp: 0,
 	about: 0,
 });
 
