@@ -32,9 +32,7 @@ std::cout << "Hello World!":
 
 cout << "Hello World!": // IF YOU HAVE using STD
 ;cpp]
-$setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-$setGlobalVar[cpp;$math[$getGlobalVar[cpp]+1]]
-$setUserVar[userCommands;$math[$getUserVar[userCommands]+1]]
+$callFunction[getGlobals;cpp]
 ]
 
 $if[$option[type]==cin;
@@ -43,9 +41,7 @@ cin >> varName:
 
 std::cin >> varName:
 ;cpp]
-$setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-$setGlobalVar[cpp;$math[$getGlobalVar[cpp]+1]]
-$setUserVar[userCommands;$math[$getUserVar[userCommands]+1]]
+$callFunction[getGlobals;cpp]
 ]
 $if[$option[type]==variables;
 $codeBlock[
@@ -55,9 +51,7 @@ char myChar = 'A':
 bool myBool = true:
 std::string myStr = "Nyx":
 ;cpp]
-$setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-$setGlobalVar[cpp;$math[$getGlobalVar[cpp]+1]]
-$setUserVar[userCommands;$math[$getUserVar[userCommands]+1]]
+$callFunction[getGlobals;cpp]
 ]
     `
 }
