@@ -34,8 +34,7 @@ console.log("Hello!"):
 // ===== VARIABLES =====
 console.log(varName):
 ;javascript]
-        $setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-        $setGlobalVar[javascript;$math[$getGlobalVar[javascript]+1]]
+ $callFunction[getGlobals;javascript]
         ;]
         $if[$option[type]==variables;
         $codeBlock[
@@ -50,8 +49,7 @@ const varName = "Goodbye!":
 const varName = 'z':
 const varName = true:
 ;javascript]
-        $setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-        $setGlobalVar[javascript;$math[$getGlobalVar[javascript]+1]]
+ $callFunction[getGlobals;javascript]
         ;]
         $if[$option[type]==function;
         $codeBlock[
@@ -68,8 +66,7 @@ function myFunc(a, b){
 
 myFunc(a, b):
 ;javascript]
-        $setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-        $setGlobalVar[javascript;$math[$getGlobalVar[javascript]+1]]
+ $callFunction[getGlobals;javascript]
         ]
     `,
 }
