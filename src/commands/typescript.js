@@ -34,8 +34,7 @@ console.log('A'):
 // ===== VARIABLES =====
 console.log(varName):
 ;typescript]
-        $setGlobalvar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-        $setGlobalvar[typescript;$math[$getGlobalVar[typescript]+1]]
+ $callFunction[getGlobals;typescript]
         ]
 
         $if[$option[type]==variables;
@@ -51,8 +50,7 @@ const varName: string = "Nationdex":
 const varName: char = 'A':
 const varname: bool =  true:
 ;typescript]
-        $setGlobalvar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-        $setGlobalvar[typescript;$math[$getGlobalVar[typescript]+1]]
+ $callFunction[getGlobals;typescript]
         ]
 
         $if[$option[type]==custom-typing;
@@ -63,8 +61,8 @@ example: myType = "Aram"
 logCommand(example)
 // You are NOT getting log and variables in this one. Therefore, replace the stuff.
 ;typescript]
-        $setGlobalvar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-        $setGlobalvar[typescript;$math[$getGlobalVar[typescript]+1]]
+ $callFunction[getGlobals;typescript]
+
         ]
     `,
 }
