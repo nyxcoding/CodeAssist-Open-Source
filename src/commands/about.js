@@ -14,18 +14,6 @@ const commands = {
     Please note, in all cases requiring a Semi-Colon, for forgescript punctuality, will be replaced with:
     Placeholders will be put in place for code commands.
     **Version:** 1.1.3
-
-    **Commands used:** $getGlobalVar[commandsUsed]
-
-    **Python used:** $getGlobalVar[python]
-
-    **JavaScript used:** $getGlobalVar[javascript]
-
-    **TypeScript used:** $getGlobalVar[typescript]
-
-    **HTML used:** $getGlobalVar[html]
-
-    **About used:** $getGlobalVar[about]
     ]
 
     $color[Navy]
