@@ -1,4 +1,3 @@
-
 const commands = {
     data: {
         name: "python",
