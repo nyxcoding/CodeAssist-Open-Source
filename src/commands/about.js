@@ -19,6 +19,6 @@ const commands = {
     $color[Navy]
     $author[DISPLAY_NAME      USERNAME       Made in BotForge]
   `,
-}
+};
 
-module.exports = commands
+module.exports = commands;

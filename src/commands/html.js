@@ -26,8 +26,8 @@ commands = {
         ]
     },
     code: `
-    $if[$option[type]==setup;
-    $codeBlock[
+        $if[$option[type]==setup;
+        $codeBlock[
 <html>
 <head>
     <!-- INSERT STUFF HERE -->
@@ -37,20 +37,18 @@ commands = {
 </body>
 </html>
 ;html]
-       $callFunction[getGlobals;html]
-    ]
-
-    $if[$option[type]==paragraph;
-    $codeBlock[
+        $callFunction[getGlobals;html]
+        ]
+        $if[$option[type]==paragraph;
+        $codeBlock[
 <!-- INSIDE BODY TAGS -->
 <p> Hello World </p>
 Hello World
 ;html]
-     $callFunction[getGlobals;html]
-    ]
-
-    $if[$option[type]==header;
-    $codeBlock[
+        $callFunction[getGlobals;html]
+        ]
+        $if[$option[type]==header;
+        $codeBlock[
 <!-- INSIDE BODY TAGS -->
 <h1> Hello World! </h1>
 <h2> Hello World! </h2>
@@ -59,9 +57,9 @@ Hello World
 <h5> Hello World! </h5>
 <h6> Hello World! </h6>
 ;html]
- $callFunction[getGlobals;html]
-    ]
-  `,
-}
+        $callFunction[getGlobals;html]
+        ]
+    `,
+};
 
-module.exports = commands
+module.exports = commands;

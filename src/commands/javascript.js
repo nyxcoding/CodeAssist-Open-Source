@@ -49,7 +49,7 @@ const varName = "Goodbye!":
 const varName = 'z':
 const varName = true:
 ;javascript]
- $callFunction[getGlobals;javascript]
+        $callFunction[getGlobals;javascript]
         ;]
         $if[$option[type]==function;
         $codeBlock[
@@ -66,9 +66,9 @@ function myFunc(a, b){
 
 myFunc(a, b):
 ;javascript]
- $callFunction[getGlobals;javascript]
+        $callFunction[getGlobals;javascript]
         ]
     `,
-}
+};
 
 module.exports = commands;

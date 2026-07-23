@@ -5,25 +5,25 @@ const commands = {
     },
     code: `
         \`
+        Commands used: $getGlobalVar[commandsUsed]
 
-Commands used: $getGlobalVar[commandsUsed]
+        Commands you have used: $getUserVar[userCommands]
 
-Commands you have used: $getUserVar[userCommands]
+        Python used: $getGlobalVar[python]
 
-Python used: $getGlobalVar[python]
+        JavaScript used: $getGlobalVar[javascript]
 
-JavaScript used: $getGlobalVar[javascript]
+        TypeScript used: $getGlobalVar[typescript]
 
-TypeScript used: $getGlobalVar[typescript]
+        HTML used: $getGlobalVar[html]
 
-HTML used: $getGlobalVar[html]
+        C# used: $getGlobalVar[csharp]
 
-C# used: $getGlobalVar[csharp]
+        C++ used: $getGlobalVar[cpp]
 
-C++ used: $getGlobalVar[cpp]
+        About used: $getGlobalVar[about]
+        \`
+    `,
+};
 
-About used: $getGlobalVar[about]
-\`
-    `
-}
 module.exports = commands;

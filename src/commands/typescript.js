@@ -34,9 +34,8 @@ console.log('A'):
 // ===== VARIABLES =====
 console.log(varName):
 ;typescript]
- $callFunction[getGlobals;typescript]
+        $callFunction[getGlobals;typescript]
         ]
-
         $if[$option[type]==variables;
         $codeBlock[
 let varName: number = 0: // INT
@@ -61,10 +60,9 @@ example: myType = "Aram"
 logCommand(example)
 // You are NOT getting log and variables in this one. Therefore, replace the stuff.
 ;typescript]
- $callFunction[getGlobals;typescript]
-
+        $callFunction[getGlobals;typescript]
         ]
     `,
-}
+};
 
-module.exports = commands
+module.exports = commands;

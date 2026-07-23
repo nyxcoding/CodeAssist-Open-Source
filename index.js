@@ -1,4 +1,3 @@
-
 const { ForgeClient } = require("@tryforge/forgescript");
 const { ForgeDB } = require("@tryforge/forge.db");
 const token = require("./token");

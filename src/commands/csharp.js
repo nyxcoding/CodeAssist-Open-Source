@@ -50,16 +50,16 @@ Console.Write(myVar)
 
 // WRITE DOES NOT MAKE A NEW LINE, WRITELINE DOES
 ;csharp]
-       $callFunction[getGlobals;csharp]
+        $callFunction[getGlobals;csharp]
         ]
         $if[$option[type]==input;
         $codeBlock[
 // INSIDE MAIN BLOCK
 Console.ReadLine()
 ;csharp]
-$callFunction[getGlobals;csharp]
+        $callFunction[getGlobals;csharp]
         ]
     `,
-}
+};
 
 module.exports = commands;
